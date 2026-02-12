@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-form {
+  flex: 1;
+  margin: 0 1rem;
+  display: flex;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  color: #000;
+  background: #fff;
+}
+
+.search-form button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #555;
+}
+
+.appRoot {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.main {
+  flex: 1 1 auto;
+  width: 100%;
+}

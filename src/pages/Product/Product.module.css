@@ -1,0 +1,159 @@
+.productPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 16px;
+  background: #fff;
+  color: #000;
+  min-height: 100vh;
+}
+
+.media img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+.info {
+  max-width: 720px;
+  text-align: center;
+}
+
+.productPage h1 {
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight:700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.desc { margin-bottom: 1rem; color:#555 }
+
+.addBtn {
+  padding: 0.75rem 1.25rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.addBtn:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 900px) {
+  .productPage {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .media {
+    flex: 0 0 420px;
+  }
+
+  .info {
+    flex: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .productPage {
+    padding: 1.5rem;
+    gap: 12px;
+  }
+
+  .media img {
+    max-width: 320px;
+  }
+
+  .info {
+    max-width: 100%;
+  }
+
+  .productPage h1 {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .productPage {
+    padding: 1rem 0.5rem;
+    gap: 12px;
+  }
+
+  .media img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .productPage h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .addBtn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .productPage {
+    padding: 0.8rem;
+    gap: 10px;
+  }
+
+  .media img {
+    max-width: 100%;
+  }
+
+  .productPage h1 {
+    font-size: 1.1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .desc {
+    font-size: 0.85rem;
+  }
+
+  .addBtn {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+}
